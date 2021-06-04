@@ -12,21 +12,26 @@
 
     <meta content="My personal homepage" property="og:description" />
     <meta content="My personal homepage" name="description" />
-    <meta name="keywords" content="ImBadInGerman, Twitter, Developer, Github">
+    <meta name="keywords" content="ImBadInGerman">
 
     <meta property="og:locale" content="de_DE" />
     <meta property="og:url" content="https://imbadingerman.github.io/" />
     <meta property="og:site_name" content="ImBadinGerman" />
-
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@ImBadinGerman" />
 
     <!-- CSS -->
     <link href="assets/css/modesta.css" type="text/css" rel="stylesheet">
     <link href="assets/css/custom.css" type="text/css" rel="stylesheet">
 
     <!-- JavaScript -->
-    <script src="assets/js/main.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+    window.addEventListener('scroll', function() {
+  // Hide arrow button when scrolling down the page
+  var scrollPosition = window.scrollY
+  var logoContainer = document.getElementsByClassName('arrow')[0]
+  if (scrollPosition >= 100) logoContainer.classList.add('arrow--scrolled')
+  else logoContainer.classList.remove('arrow--scrolled')
+})
+</script>
   </head>
   <body class="dark-theme github">
     <div class="fullscreen">
@@ -39,51 +44,15 @@
             </div>
             <div class="unset">
               <h1 class="title monospace">ImBadInGerman</h1>
-              <p class="undertitle monospace">I'm a litte developer that things the earth is great place that need to be better.</p>
+              <p class="undertitle monospace">The Earth needs to be a better place.</p>
             </div>
           </section>
           <div class="buttons">
-            <a href="https://github.com/ImBadInGerman" class="btn github-dropshadow animation hover" target="_blank">GitHub</a>
-            <a href="https://teamtrees.org/" class="btn whatsapp-dropshadow animation hover" target="_blank">#TeamTrees</a>
-            <a href="https://twitter.com/ImBadInGerman" class="btn twitter-dropshadow animation hover" target="_blank">Twitter</a>
+            <a href="/pages/projects.html" class="btn github-dropshadow animation hover" target="_blank">Projects</a>
+            <a href="https://linktr.ee/ImBadInGerman" class="btn whatsapp-dropshadow animation hover" target="_blank">Social Media</a>
+            <a href="https://github.com/ImBadInGerman/imbadingerman" class="btn twitter-dropshadow animation hover" target="_blank">Ideas</a>
           </div>
         </div>
       </div>
-
-    <section class="container" id="information">
-      <div class="box-container">
-        <h1 class="title emerald-text">Information:</h1>
-        <div class="info-container"><p>
-          Hello, my name is <span class="emerald-text">Eric</span>, but i'm known as <span class="emerald-text">ImBadInGerman</span> over the internet.
-          I'm a Person that spends time coding scripts and some random projects. Huge thanks to <span class="emerald-text">AlexFlipnote</span>. Without him I would be coding.
-          Current coding languages that i know a bit about it are <span class="emerald-text">Python</span> and some <span class="emerald-text">Java</span>.
-        </p></div>
-      </div>
-
-    <section class="container" id="information">
-      <div class="box-container">
-        <h1 class="title emerald-text">Ideas:</h1>
-        <div class="info-container"><p>
-          I'm thinking about an <span class="emerald-text">Python Script Generator</span>. That Generator will make a Discord Rich Presence Script via PyPresence. Read more in my GitHub Readme.md!
-        </p></div>
-      </div>
-
-      <div class="box-container">
-        <h1 class="title emerald-text"></i>Projects:</h1>
-        <div class="info-container">
-          <p><a href="https://imbadingerman.github.io" target="_blank">Github Page</a>, This Website</p>
-          <p><a href="https://github.com/ImBadInGerman" target="_blank">More Coming Soon</a> </p>
-        </div>
-      </div>
-    </section>
-
-    <footer class="text-center box-container">
-      <p class="no-margin">
-        <a href="https://github.com/ImBadInGerman/imbadingerman.github.io/blob/main/LICENSE" target="_blank">LICENSE</a>
-        | ImBadInGerman |
-        <a href="https://github.com/ImBadInGerman/imbadingerman.github.io" target="_blank">Source</a>
-      </p>
-    </footer>
-
   </body>
 </html>
