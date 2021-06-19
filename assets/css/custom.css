@@ -1,4 +1,4 @@
-/*! Thanks to AlexFlipNote for this css file!*/
+/*! Thanks to AlexFlipNote for this css file! Edited by ImBadInGerman*/
 .fullscreen h1.title { margin-bottom: 0; letter-spacing: 2px; }
 .undertitle { font-style: italic; }
 .box-container { margin-bottom: .5rem; }
@@ -88,4 +88,8 @@ a:hover { color: #0fa0ce; }
 @media (max-width: 550px) {
   .info-container { padding-left: 0; }
   .title { font-size: 2em; }
+}
+
+body {
+  overflow: hidden; /* Bug Fix #1*/
 }
